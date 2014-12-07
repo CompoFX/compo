@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Compo Demo</string>
+    <string name="str_select_image">Pick</string>
+    <string name="str_saveto_gallery">Save</string>
+    <string name="app_label">Compo Image Composition</string>
+    <string-array name="effect_names">
+        <item >Normal</item>
+        <item >Grey Scale</item>
+        <item >Lighten</item>
+        <item >Sepia</item>
+        <item >Hitam Putih</item>
+        <item >Scribe</item>
+        <item >Hike</item>
+        <item >Cinta</item>
+        <item >Analog</item>
+        <item >Thermo</item>
+        <item >Desaku</item>
+        <item >Kelud</item>
+        <item >Hero</item>
+        <item >Pencil</item>
+        <item >Stylish</item>
+        <item >Lord Kevin</item>
+        <item >Hudson</item>
+        <item >Pixelate</item>
+    </string-array>
+</resources>

@@ -1,0 +1,63 @@
+CFLAGS := -D_FORTIFY_SOURCE=2 \
+					-fPIC -Wall -Werror ${MAKEFLAGS} \
+					-Wformat -Wformat-security -Werror=format-security \
+					-ftrapv \
+					-DJOLLA=1 -D__JOLLA__=1
+
+INC_FLAGS := -I../../../renderer \
+						 -I../../../renderer/egl \
+						 -I../../../renderer/jolla \
+						 -I../../../../3rdparty/boost_1_55_0 \
+						 -I../../../../3rdparty/glm-0.9.5
+
+CXXFLAGS := ${CFLAGS}
+
+SOURCES = ../../../renderer/CompoShader.cpp \
+					../../../renderer/CompoShaderInfoLog.cpp \
+					../../../renderer/CompoShaderProgram.cpp \
+					../../../renderer/CompoTexture.cpp \
+					../../../renderer/CompoPhotoQuad.cpp \
+					../../../renderer/CompoRenderBufferOutput.cpp \
+					../../../renderer/CompoEffect.cpp \
+					../../../renderer/CompoComposition.cpp \
+
+SOURCES += ../../../renderer/egl/CompoScreenOutput.cpp
+
+SOURCES += ../../../renderer/jolla/CompoGraphicsContext.cpp
+
+OBJECTS := $(subst ../../../,obj/$(CPUVARIANT)/,$(SOURCES))
+
+OBJECTS := $(OBJECTS:.cpp=.o)
+
+OBJECTS := $(OBJECTS:.c=.o)
+
+NAME := CompoRenderer
+
+LIBNAME := lib$(NAME)-$(CPUVARIANT).a
+
+.PHONY: all build clean
+
+all: build $(LIBNAME)
+
+build:
+	@echo "Creating output dir for $(CPUVARIANT)..."
+	@mkdir -p obj/$(CPUVARIANT)/renderer/jolla
+	@mkdir -p obj/$(CPUVARIANT)/renderer/egl
+
+$(LIBNAME) : $(OBJECTS)
+	@echo "[AR] $(notdir $@)"
+	@$(AR) cr $@ $(OBJECTS)
+	@echo "[RANLIB] $(notdir $@)"
+	@$(RANLIB) $@
+
+$(SOURCES) : %.cpp : $(wildcard ../../../renderer/*.h) $(wildcard ../../../renderer/jolla/*.h)
+	
+
+$(OBJECTS) : obj/$(CPUVARIANT)/%.o : ../../../%.cpp
+	@$(CXX) $(INC_FLAGS) $(CXXFLAGS) -c $< -o $@
+	@echo "[COMPILE] $(notdir $<) => $(notdir $@)"
+
+clean: 
+	rm -fr obj $(LIBNAME)	
+
+

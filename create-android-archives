@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+# Create tar.bz and zipfile
+if test -d product/android; then rm -r product/android; fi
+
+mkdir -p product/android/assets && mkdir -p product/android/libs
+
+cp -fa product/ios/Compo.bundle product/android/assets/
+cp -fa docs/README.md product/android/
+cp -fa docs/ReleaseNotes.md product/android/
+cp -fa docs/PRE-EULA.rtf product/android
+cp -fa src/views/android/bin/compo.jar product/android/libs/
+cp -fa src/views/android/libs/{x86,armeabi,armeabi-v7a} product/android/libs/ 
+
+tar cvf - product/android/* | bzip2 -9 > "product/${BZ2_FILE_NAME_ANDROID}"
+zip -9 -r "product/${ZIP_FILE_NAME_ANDROID}" product/android/* 

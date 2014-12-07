@@ -1,0 +1,25 @@
+#!/usr/bin/env bash
+
+# Create tar.bz and zipfile
+if test -d product/blackberry; then rm -r product/blackberry; fi
+
+mkdir -p product/blackberry/assets && mkdir -p product/blackberry/libs &&
+  mkdir -p product/blackberry/include
+
+cp -fa product/ios/Compo.bundle product/blackberry/assets/
+cp -fa docs/README.md product/blackberry/
+cp -fa docs/ReleaseNotes.md product/blackberry/
+cp -fa docs/PRE-EULA.rtf product/blackberry
+cp -fa src/views/blackberry/{x86,arm} product/blackberry/libs/ 
+cp -fa src/views/blackberry/include/CompoViewControl.h product/blackberry/include
+
+#removing .moc .obj and .a
+rm -fr product/blackberry/libs/{x86,arm}/Makefile*
+rm -fr product/blackberry/libs/x86/so
+rm -fr product/blackberry/libs/x86/so-g/.{moc,obj}
+rm -fr product/blackberry/libs/arm/so.le-v7{,-g}/.{moc,obj}
+rm -fr product/blackberry/libs/x86/so-g/*.a
+rm -fr product/blackberry/libs/arm/so.le-v7{,-g}/*.a
+
+tar cvf - product/blackberry/* | bzip2 --best > "product/${BZ2_FILE_NAME_BLACKBERRY}"
+zip -9 -r "product/${ZIP_FILE_NAME_BLACKBERRY}" product/blackberry/* 

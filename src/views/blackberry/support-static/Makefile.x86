@@ -1,0 +1,11 @@
+AR=${QNX_HOST}/usr/bin/ntox86-ar
+RANLIB=${QNX_HOST}/usr/bin/ntox86-ranlib
+CPP=${QNX_HOST}/usr/bin/qcc -V4.6.3,gcc_ntox86_cpp -E
+CC=${QNX_HOST}/usr/bin/qcc -V4.6.3,gcc_ntox86_cpp
+CXX=${QNX_HOST}/usr/bin/qcc -V4.6.3,gcc_ntox86_cpp
+LD=${QNX_HOST}/usr/bin/ntox86-ld
+LDFLAGS=-L${QNX_TARGET}/x86/lib -L${PREFIX}/lib -lm
+
+CPUVARIANT=x86
+
+include Makefile.srcs

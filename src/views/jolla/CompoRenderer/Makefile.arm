@@ -1,0 +1,12 @@
+SB2=sb2 -t SailfishOS-armv7hl
+AR=${SB2} ar
+RANLIB=${SB2} ranlib
+CPP=${SB2} gcc -E
+CC=${SB2} gcc
+CXX=${SB2} g++
+LD=${SB2} ld
+LDFLAGS=-pthread -lm
+
+CPUVARIANT=arm
+
+include Makefile.srcs

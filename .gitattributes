@@ -1,0 +1,6 @@
+*.pbxproj -crlf -diff -merge
+*.storyboard -crlf -diff -merge
+*.xib -crlf -diff -merge
+.cproject -crlf -diff -merge
+.project -crlf -diff -merge
+AndroidManifest.xml -crlf -diff -merge

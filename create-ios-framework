@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+if test -d product/ios/CompoView.framework;
+then
+  rm -rf product/ios/CompoView.framework;
+fi
+
+if test -d product/ios/Compo.bundle;
+then
+  rm -rf product/ios/Compo.bundle;
+fi
+
+# Change to iOS View Dir and build project
+cd src/views/ios && xcodebuild -project CompoView.xcodeproj -target Framework \
+  && xcodebuild -project CompoView.xcodeproj -target CompoResources
+cd ../../..

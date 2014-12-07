@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+cd src/views/blackberry/support-static &&
+  make clean && make -f Makefile.x86 && make -f Makefile.arm &&
+  cd ..
+
+make clean Simulator-Debug Device-Debug Device-Release&&
+  cd ../../../
+

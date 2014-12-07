@@ -1,0 +1,5 @@
+# "default" project
+
+compo {
+  LIBS += -lCompoViewControl
+}

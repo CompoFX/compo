@@ -1,0 +1,11 @@
+AR=${QNX_HOST}/usr/bin/ntoarmv7-ar
+RANLIB=${QNX_HOST}/usr/bin/ntoarmv7-ranlib
+CPP=${QNX_HOST}/usr/bin/qcc -V4.6.3,gcc_ntoarmv7le_cpp -E
+CC=${QNX_HOST}/usr/bin/qcc -V4.6.3,gcc_ntoarmv7le_cpp
+CXX=${QNX_HOST}/usr/bin/qcc -V4.6.3,gcc_ntoarmv7le_cpp
+LD=${QNX_HOST}/usr/bin/ntoarmv7-ld
+LDFLAGS=-L${QNX_TARGET}/armle-v7/lib -L${PREFIX}/lib -lm
+
+CPUVARIANT=arm
+
+include Makefile.srcs

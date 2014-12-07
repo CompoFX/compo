@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+# Change to Android View Dir and build project
+cd src/views/android && ndk-build clean && ndk-build -j8 && \
+  ant clean && ant release || \
+  cd ../../../
+
+

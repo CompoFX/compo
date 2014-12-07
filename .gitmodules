@@ -1,0 +1,10 @@
+
+[submodule "3rdparty/angle"]
+	path = 3rdparty/angle
+	url = git@github.com:MSOpenTech/angle.git
+[submodule "tool/create-image"]
+	path = tool/create-image
+	url = https://lynxluna@bitbucket.org/ykode/create-image.git
+[submodule "tool/s3cmd"]
+	path = tool/s3cmd
+	url = git@github.com:s3tools/s3cmd.git

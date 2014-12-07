@@ -1,0 +1,3 @@
+<project>
+  <property name="asset.dir" value="../../src/resources/" />
+</project>

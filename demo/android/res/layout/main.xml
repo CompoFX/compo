@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+
+  <TextView
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/app_label" />
+
+  <com.ykode.compo.CompoView
+      android:id="@+id/effectView"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content" />
+
+  <Spinner
+    android:id="@+id/effectSpinner"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:entries="@array/effect_names" />
+  
+  <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+
+    <Button
+      android:id="@+id/selectImageButton"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/str_select_image"
+      android:layout_weight="1" />
+
+    <Button
+      android:id="@+id/saveImageButton"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/str_saveto_gallery" 
+      android:layout_weight="1"/>
+
+  </LinearLayout>
+
+
+</LinearLayout>
+

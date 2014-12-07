@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+cat detect-git-tag create-ios-framework create-android-libs \
+    create-ios-dmg create-android-archives | `which bash`

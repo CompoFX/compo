@@ -1,0 +1,12 @@
+SB2=sb2 -t SailfishOS-i486-x86
+AR=${SB2} ar
+RANLIB=${SB2} ranlib
+CPP=${SB2} gcc -E
+CC=${SB2} gcc
+CXX=${SB2} g++
+LD=${SB2} ld
+LDFLAGS=-pthread -lm
+
+CPUVARIANT=x86
+
+include Makefile.srcs

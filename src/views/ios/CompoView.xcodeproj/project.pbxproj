@@ -1,0 +1,929 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		6CF31CB718B6CDE300C3498C /* Framework */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 6CF31CB818B6CDE300C3498C /* Build configuration list for PBXAggregateTarget "Framework" */;
+			buildPhases = (
+				6CF31CBD18B6CDF600C3498C /* ShellScript */,
+			);
+			dependencies = (
+				6CF31CBC18B6CDE900C3498C /* PBXTargetDependency */,
+			);
+			name = Framework;
+			productName = Framework;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		6C03DFCB18B268B7009F79B4 /* CompoView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6C03DFCA18B268B7009F79B4 /* CompoView.mm */; };
+		6C1024F218E090B0002BE10B /* CompoScreenOutputIOS.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6C1024F018E090B0002BE10B /* CompoScreenOutputIOS.mm */; };
+		6C38CD0818E031AD00887BD4 /* CompoImageSources.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C38CD0718E031AD00887BD4 /* CompoImageSources.h */; };
+		6C521CC218E28CF900F3EBA3 /* CompoRenderBufferOutput.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6C521CC018E28CF900F3EBA3 /* CompoRenderBufferOutput.cpp */; };
+		6C521CC318E28CF900F3EBA3 /* CompoRenderBufferOutput.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C521CC118E28CF900F3EBA3 /* CompoRenderBufferOutput.h */; };
+		6C55D57D18BD137E0010003C /* CompoImageIOS.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6C55D57918BD137E0010003C /* CompoImageIOS.mm */; };
+		6C55D57E18BD137E0010003C /* CompoUtilIOS.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6C55D57A18BD137E0010003C /* CompoUtilIOS.mm */; };
+		6C55D57F18BD137E0010003C /* UIImage+Compo.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C55D57B18BD137E0010003C /* UIImage+Compo.h */; };
+		6C55D58018BD137E0010003C /* UIImage+Compo.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6C55D57C18BD137E0010003C /* UIImage+Compo.mm */; };
+		6C684FD818E5AC2E00286528 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C684FD418E5AC2E00286528 /* AppDelegate.m */; };
+		6C684FD918E5AC2E00286528 /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6C684FD518E5AC2E00286528 /* main.mm */; };
+		6C684FDA18E5AC2E00286528 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C684FD718E5AC2E00286528 /* ViewController.m */; };
+		6C8D1BFF18E2BD2200566448 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C8DBAC118B2002500AE3197 /* Foundation.framework */; };
+		6C8D1C0018E2BD2200566448 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C8DBAED18B200C000AE3197 /* CoreGraphics.framework */; };
+		6C8D1C0118E2BD2200566448 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C8DBAE718B200AB00AE3197 /* UIKit.framework */; };
+		6C8D1C3818E2BDF300566448 /* custom.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 6C8D1C3618E2BDF300566448 /* custom.JPG */; };
+		6C8D1C3918E2BDF300566448 /* demo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6C8D1C3718E2BDF300566448 /* demo.jpg */; };
+		6C8D1C3B18E2BDFA00566448 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C8D1C3A18E2BDFA00566448 /* Main.storyboard */; };
+		6C8D1C4E18E2BE7500566448 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C8D1C4D18E2BE7500566448 /* Images.xcassets */; };
+		6C8D1C4F18E2BE9400566448 /* libCompoView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C8DBABE18B2002500AE3197 /* libCompoView.a */; };
+		6C8D1C5018E2BEA000566448 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C8DBAE918B200B200AE3197 /* OpenGLES.framework */; };
+		6C8D1C5118E2BEA600566448 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C8DBAEB18B200B900AE3197 /* QuartzCore.framework */; };
+		6C8D1C7518E2C0C200566448 /* Compo.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6CF31C2B18B63ED700C3498C /* Compo.bundle */; };
+		6C8DBAC218B2002500AE3197 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C8DBAC118B2002500AE3197 /* Foundation.framework */; };
+		6C8DBAE818B200AB00AE3197 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C8DBAE718B200AB00AE3197 /* UIKit.framework */; };
+		6C8DBAEA18B200B200AE3197 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C8DBAE918B200B200AE3197 /* OpenGLES.framework */; };
+		6C8DBAEC18B200B900AE3197 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C8DBAEB18B200B900AE3197 /* QuartzCore.framework */; };
+		6C8DBAEE18B200C000AE3197 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C8DBAED18B200C000AE3197 /* CoreGraphics.framework */; };
+		6C96029018BDCD9A00332E59 /* analogMap.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C96027618BDCD9A00332E59 /* analogMap.png */; };
+		6C96029118BDCD9A00332E59 /* chalkBoard.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C96027718BDCD9A00332E59 /* chalkBoard.png */; };
+		6C96029218BDCD9A00332E59 /* coatCurves.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C96027818BDCD9A00332E59 /* coatCurves.png */; };
+		6C96029318BDCD9A00332E59 /* desakuMap.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C96027918BDCD9A00332E59 /* desakuMap.png */; };
+		6C96029418BDCD9A00332E59 /* heroMap.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C96027A18BDCD9A00332E59 /* heroMap.png */; };
+		6C96029518BDCD9A00332E59 /* hikeCurves.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C96027B18BDCD9A00332E59 /* hikeCurves.png */; };
+		6C96029618BDCD9A00332E59 /* hitamPutihContrast.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C96027C18BDCD9A00332E59 /* hitamPutihContrast.png */; };
+		6C96029718BDCD9A00332E59 /* hitamPutihCurves.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C96027D18BDCD9A00332E59 /* hitamPutihCurves.png */; };
+		6C96029818BDCD9A00332E59 /* hudsonBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C96027E18BDCD9A00332E59 /* hudsonBackground.png */; };
+		6C96029918BDCD9A00332E59 /* hudsonMap.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C96027F18BDCD9A00332E59 /* hudsonMap.png */; };
+		6C96029A18BDCD9A00332E59 /* keludMap.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C96028018BDCD9A00332E59 /* keludMap.png */; };
+		6C96029B18BDCD9A00332E59 /* keludStory.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C96028118BDCD9A00332E59 /* keludStory.png */; };
+		6C96029C18BDCD9A00332E59 /* kelvinMap.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C96028218BDCD9A00332E59 /* kelvinMap.png */; };
+		6C96029D18BDCD9A00332E59 /* loveMap.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C96028318BDCD9A00332E59 /* loveMap.png */; };
+		6C96029E18BDCD9A00332E59 /* pencilMap.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C96028418BDCD9A00332E59 /* pencilMap.png */; };
+		6C96029F18BDCD9A00332E59 /* scribeMap.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C96028518BDCD9A00332E59 /* scribeMap.png */; };
+		6C9602A018BDCD9A00332E59 /* softLight.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C96028618BDCD9A00332E59 /* softLight.png */; };
+		6C9602A118BDCD9A00332E59 /* storyMap.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C96028718BDCD9A00332E59 /* storyMap.png */; };
+		6C9602A218BDCD9A00332E59 /* stylishCurves.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C96028818BDCD9A00332E59 /* stylishCurves.png */; };
+		6C9602A318BDCD9A00332E59 /* stylishEdgeBurn.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C96028918BDCD9A00332E59 /* stylishEdgeBurn.png */; };
+		6C9602A418BDCD9A00332E59 /* stylishMetal.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C96028A18BDCD9A00332E59 /* stylishMetal.png */; };
+		6C9602A518BDCD9A00332E59 /* thermoBlowout.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C96028B18BDCD9A00332E59 /* thermoBlowout.png */; };
+		6C9602A618BDCD9A00332E59 /* thermoContrast.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C96028C18BDCD9A00332E59 /* thermoContrast.png */; };
+		6C9602A718BDCD9A00332E59 /* thermoLuma.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C96028D18BDCD9A00332E59 /* thermoLuma.png */; };
+		6C9602A818BDCD9A00332E59 /* thermoProcess.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C96028E18BDCD9A00332E59 /* thermoProcess.png */; };
+		6C9602A918BDCD9A00332E59 /* thermoScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C96028F18BDCD9A00332E59 /* thermoScreen.png */; };
+		6CF31AF518B36DBB00C3498C /* CompoShader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6CF31AF318B36DBB00C3498C /* CompoShader.cpp */; };
+		6CF31AFB18B428C400C3498C /* CompoShaderInfoLog.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6CF31AF918B428C400C3498C /* CompoShaderInfoLog.cpp */; };
+		6CF31AFE18B428E300C3498C /* CompoShaderProgram.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6CF31AFC18B428E300C3498C /* CompoShaderProgram.cpp */; };
+		6CF31B0618B44D2900C3498C /* CompoPhotoQuad.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6CF31B0418B44D2900C3498C /* CompoPhotoQuad.cpp */; };
+		6CF31C0B18B47F1A00C3498C /* CompoTexture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6CF31C0918B47F1A00C3498C /* CompoTexture.cpp */; };
+		6CF31C1818B5D8CF00C3498C /* CompoEffect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6CF31C1618B5D8CF00C3498C /* CompoEffect.cpp */; };
+		6CF31C2618B63E6200C3498C /* CompoComposition.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6CF31C2418B63E6200C3498C /* CompoComposition.cpp */; };
+		6CF31C2D18B63ED700C3498C /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CF31C2C18B63ED700C3498C /* CoreFoundation.framework */; };
+		6CF31CB418B6CCC400C3498C /* CompoView.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C03DFC918B268B7009F79B4 /* CompoView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6C8D1C7118E2C07D00566448 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6C8DBAB618B2002500AE3197 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6C8DBABD18B2002500AE3197;
+			remoteInfo = CompoView;
+		};
+		6C8D1C7318E2C0B500566448 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6C8DBAB618B2002500AE3197 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6CF31C2A18B63ED700C3498C;
+			remoteInfo = CompoResources;
+		};
+		6CF31CBB18B6CDE900C3498C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6C8DBAB618B2002500AE3197 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6C8DBABD18B2002500AE3197;
+			remoteInfo = CompoView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6C8DBABC18B2002500AE3197 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		6C03DFC918B268B7009F79B4 /* CompoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompoView.h; sourceTree = "<group>"; };
+		6C03DFCA18B268B7009F79B4 /* CompoView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CompoView.mm; sourceTree = "<group>"; };
+		6C03E05418B28021009F79B4 /* CompoImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CompoImage.h; path = ../../renderer/CompoImage.h; sourceTree = "<group>"; };
+		6C1024A518E07C81002BE10B /* CompoRenderState.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CompoRenderState.h; path = ../../renderer/CompoRenderState.h; sourceTree = "<group>"; };
+		6C1024EC18E08D5C002BE10B /* CompoRenderable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CompoRenderable.h; path = ../../renderer/CompoRenderable.h; sourceTree = "<group>"; };
+		6C1024ED18E08DFE002BE10B /* CompoGraphicsOutput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CompoGraphicsOutput.h; path = ../../renderer/CompoGraphicsOutput.h; sourceTree = "<group>"; };
+		6C1024EE18E08F9E002BE10B /* CompoScreenOutput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CompoScreenOutput.h; path = ../../renderer/CompoScreenOutput.h; sourceTree = "<group>"; };
+		6C1024F018E090B0002BE10B /* CompoScreenOutputIOS.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CompoScreenOutputIOS.mm; sourceTree = "<group>"; };
+		6C38CD0718E031AD00887BD4 /* CompoImageSources.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CompoImageSources.h; path = ../../renderer/CompoImageSources.h; sourceTree = "<group>"; };
+		6C521CC018E28CF900F3EBA3 /* CompoRenderBufferOutput.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CompoRenderBufferOutput.cpp; path = ../../renderer/CompoRenderBufferOutput.cpp; sourceTree = "<group>"; };
+		6C521CC118E28CF900F3EBA3 /* CompoRenderBufferOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CompoRenderBufferOutput.h; path = ../../renderer/CompoRenderBufferOutput.h; sourceTree = "<group>"; };
+		6C55D57918BD137E0010003C /* CompoImageIOS.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CompoImageIOS.mm; sourceTree = "<group>"; };
+		6C55D57A18BD137E0010003C /* CompoUtilIOS.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CompoUtilIOS.mm; sourceTree = "<group>"; };
+		6C55D57B18BD137E0010003C /* UIImage+Compo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Compo.h"; sourceTree = "<group>"; };
+		6C55D57C18BD137E0010003C /* UIImage+Compo.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "UIImage+Compo.mm"; sourceTree = "<group>"; };
+		6C55D58118BD13A70010003C /* CompoImage.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = CompoImage.inl; path = ../../renderer/CompoImage.inl; sourceTree = "<group>"; };
+		6C684FD318E5AC2E00286528 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../../../../demo/ios/src/AppDelegate.h; sourceTree = "<group>"; };
+		6C684FD418E5AC2E00286528 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = ../../../../demo/ios/src/AppDelegate.m; sourceTree = "<group>"; };
+		6C684FD518E5AC2E00286528 /* main.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = main.mm; path = ../../../../demo/ios/src/main.mm; sourceTree = "<group>"; };
+		6C684FD618E5AC2E00286528 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = ../../../../demo/ios/src/ViewController.h; sourceTree = "<group>"; };
+		6C684FD718E5AC2E00286528 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = ../../../../demo/ios/src/ViewController.m; sourceTree = "<group>"; };
+		6C8D1BFE18E2BD2200566448 /* CompoDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CompoDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C8D1C2918E2BD5200566448 /* TestApp-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TestApp-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		6C8D1C2A18E2BD5200566448 /* TestApp.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TestApp.plist; sourceTree = SOURCE_ROOT; };
+		6C8D1C2C18E2BD8F00566448 /* InfoPlist.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = InfoPlist.strings; sourceTree = SOURCE_ROOT; };
+		6C8D1C3618E2BDF300566448 /* custom.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = custom.JPG; path = "../../../../demo/ios/test-images/custom.JPG"; sourceTree = "<group>"; };
+		6C8D1C3718E2BDF300566448 /* demo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = demo.jpg; path = "../../../../demo/ios/test-images/demo.jpg"; sourceTree = "<group>"; };
+		6C8D1C3A18E2BDFA00566448 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ../../../../demo/ios/storyboards/Main.storyboard; sourceTree = "<group>"; };
+		6C8D1C4D18E2BE7500566448 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ../../../../demo/ios/xcassets/Images.xcassets; sourceTree = "<group>"; };
+		6C8DBABE18B2002500AE3197 /* libCompoView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCompoView.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C8DBAC118B2002500AE3197 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		6C8DBAC518B2002500AE3197 /* CompoView-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CompoView-Prefix.pch"; sourceTree = "<group>"; };
+		6C8DBAE718B200AB00AE3197 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		6C8DBAE918B200B200AE3197 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		6C8DBAEB18B200B900AE3197 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		6C8DBAED18B200C000AE3197 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		6C8DBAF818B221A300AE3197 /* CompoTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CompoTypes.h; path = ../../renderer/CompoTypes.h; sourceTree = "<group>"; };
+		6C96027618BDCD9A00332E59 /* analogMap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = analogMap.png; path = ../../../resources/Compo.bundle/analogMap.png; sourceTree = "<group>"; };
+		6C96027718BDCD9A00332E59 /* chalkBoard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = chalkBoard.png; path = ../../../resources/Compo.bundle/chalkBoard.png; sourceTree = "<group>"; };
+		6C96027818BDCD9A00332E59 /* coatCurves.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = coatCurves.png; path = ../../../resources/Compo.bundle/coatCurves.png; sourceTree = "<group>"; };
+		6C96027918BDCD9A00332E59 /* desakuMap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = desakuMap.png; path = ../../../resources/Compo.bundle/desakuMap.png; sourceTree = "<group>"; };
+		6C96027A18BDCD9A00332E59 /* heroMap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = heroMap.png; path = ../../../resources/Compo.bundle/heroMap.png; sourceTree = "<group>"; };
+		6C96027B18BDCD9A00332E59 /* hikeCurves.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = hikeCurves.png; path = ../../../resources/Compo.bundle/hikeCurves.png; sourceTree = "<group>"; };
+		6C96027C18BDCD9A00332E59 /* hitamPutihContrast.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = hitamPutihContrast.png; path = ../../../resources/Compo.bundle/hitamPutihContrast.png; sourceTree = "<group>"; };
+		6C96027D18BDCD9A00332E59 /* hitamPutihCurves.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = hitamPutihCurves.png; path = ../../../resources/Compo.bundle/hitamPutihCurves.png; sourceTree = "<group>"; };
+		6C96027E18BDCD9A00332E59 /* hudsonBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = hudsonBackground.png; path = ../../../resources/Compo.bundle/hudsonBackground.png; sourceTree = "<group>"; };
+		6C96027F18BDCD9A00332E59 /* hudsonMap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = hudsonMap.png; path = ../../../resources/Compo.bundle/hudsonMap.png; sourceTree = "<group>"; };
+		6C96028018BDCD9A00332E59 /* keludMap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = keludMap.png; path = ../../../resources/Compo.bundle/keludMap.png; sourceTree = "<group>"; };
+		6C96028118BDCD9A00332E59 /* keludStory.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = keludStory.png; path = ../../../resources/Compo.bundle/keludStory.png; sourceTree = "<group>"; };
+		6C96028218BDCD9A00332E59 /* kelvinMap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = kelvinMap.png; path = ../../../resources/Compo.bundle/kelvinMap.png; sourceTree = "<group>"; };
+		6C96028318BDCD9A00332E59 /* loveMap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = loveMap.png; path = ../../../resources/Compo.bundle/loveMap.png; sourceTree = "<group>"; };
+		6C96028418BDCD9A00332E59 /* pencilMap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pencilMap.png; path = ../../../resources/Compo.bundle/pencilMap.png; sourceTree = "<group>"; };
+		6C96028518BDCD9A00332E59 /* scribeMap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = scribeMap.png; path = ../../../resources/Compo.bundle/scribeMap.png; sourceTree = "<group>"; };
+		6C96028618BDCD9A00332E59 /* softLight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = softLight.png; path = ../../../resources/Compo.bundle/softLight.png; sourceTree = "<group>"; };
+		6C96028718BDCD9A00332E59 /* storyMap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = storyMap.png; path = ../../../resources/Compo.bundle/storyMap.png; sourceTree = "<group>"; };
+		6C96028818BDCD9A00332E59 /* stylishCurves.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = stylishCurves.png; path = ../../../resources/Compo.bundle/stylishCurves.png; sourceTree = "<group>"; };
+		6C96028918BDCD9A00332E59 /* stylishEdgeBurn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = stylishEdgeBurn.png; path = ../../../resources/Compo.bundle/stylishEdgeBurn.png; sourceTree = "<group>"; };
+		6C96028A18BDCD9A00332E59 /* stylishMetal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = stylishMetal.png; path = ../../../resources/Compo.bundle/stylishMetal.png; sourceTree = "<group>"; };
+		6C96028B18BDCD9A00332E59 /* thermoBlowout.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = thermoBlowout.png; path = ../../../resources/Compo.bundle/thermoBlowout.png; sourceTree = "<group>"; };
+		6C96028C18BDCD9A00332E59 /* thermoContrast.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = thermoContrast.png; path = ../../../resources/Compo.bundle/thermoContrast.png; sourceTree = "<group>"; };
+		6C96028D18BDCD9A00332E59 /* thermoLuma.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = thermoLuma.png; path = ../../../resources/Compo.bundle/thermoLuma.png; sourceTree = "<group>"; };
+		6C96028E18BDCD9A00332E59 /* thermoProcess.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = thermoProcess.png; path = ../../../resources/Compo.bundle/thermoProcess.png; sourceTree = "<group>"; };
+		6C96028F18BDCD9A00332E59 /* thermoScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = thermoScreen.png; path = ../../../resources/Compo.bundle/thermoScreen.png; sourceTree = "<group>"; };
+		6CF31AE118B35A6300C3498C /* CompoCrypt.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CompoCrypt.h; path = ../../renderer/CompoCrypt.h; sourceTree = "<group>"; };
+		6CF31AF318B36DBB00C3498C /* CompoShader.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = CompoShader.cpp; path = ../../renderer/CompoShader.cpp; sourceTree = "<group>"; };
+		6CF31AF418B36DBB00C3498C /* CompoShader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CompoShader.h; path = ../../renderer/CompoShader.h; sourceTree = "<group>"; };
+		6CF31AF918B428C400C3498C /* CompoShaderInfoLog.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = CompoShaderInfoLog.cpp; path = ../../renderer/CompoShaderInfoLog.cpp; sourceTree = "<group>"; };
+		6CF31AFA18B428C400C3498C /* CompoShaderInfoLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CompoShaderInfoLog.h; path = ../../renderer/CompoShaderInfoLog.h; sourceTree = "<group>"; };
+		6CF31AFC18B428E300C3498C /* CompoShaderProgram.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = CompoShaderProgram.cpp; path = ../../renderer/CompoShaderProgram.cpp; sourceTree = "<group>"; };
+		6CF31AFD18B428E300C3498C /* CompoShaderProgram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CompoShaderProgram.h; path = ../../renderer/CompoShaderProgram.h; sourceTree = "<group>"; };
+		6CF31B0318B4436500C3498C /* CompoShadersSources.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CompoShadersSources.h; path = ../../renderer/CompoShadersSources.h; sourceTree = "<group>"; };
+		6CF31B0418B44D2900C3498C /* CompoPhotoQuad.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CompoPhotoQuad.cpp; path = ../../renderer/CompoPhotoQuad.cpp; sourceTree = "<group>"; };
+		6CF31B0518B44D2900C3498C /* CompoPhotoQuad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CompoPhotoQuad.h; path = ../../renderer/CompoPhotoQuad.h; sourceTree = "<group>"; };
+		6CF31C0918B47F1A00C3498C /* CompoTexture.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CompoTexture.cpp; path = ../../renderer/CompoTexture.cpp; sourceTree = "<group>"; };
+		6CF31C0A18B47F1A00C3498C /* CompoTexture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CompoTexture.h; path = ../../renderer/CompoTexture.h; sourceTree = "<group>"; };
+		6CF31C1018B5D2AA00C3498C /* CompoUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CompoUtil.h; path = ../../renderer/CompoUtil.h; sourceTree = "<group>"; };
+		6CF31C1618B5D8CF00C3498C /* CompoEffect.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CompoEffect.cpp; path = ../../renderer/CompoEffect.cpp; sourceTree = "<group>"; };
+		6CF31C1718B5D8CF00C3498C /* CompoEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CompoEffect.h; path = ../../renderer/CompoEffect.h; sourceTree = "<group>"; };
+		6CF31C2418B63E6200C3498C /* CompoComposition.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CompoComposition.cpp; path = ../../renderer/CompoComposition.cpp; sourceTree = "<group>"; };
+		6CF31C2518B63E6200C3498C /* CompoComposition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CompoComposition.h; path = ../../renderer/CompoComposition.h; sourceTree = "<group>"; };
+		6CF31C2B18B63ED700C3498C /* Compo.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Compo.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CF31C2C18B63ED700C3498C /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6C8D1BFB18E2BD2200566448 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C8D1C5118E2BEA600566448 /* QuartzCore.framework in Frameworks */,
+				6C8D1C5018E2BEA000566448 /* OpenGLES.framework in Frameworks */,
+				6C8D1C4F18E2BE9400566448 /* libCompoView.a in Frameworks */,
+				6C8D1C0018E2BD2200566448 /* CoreGraphics.framework in Frameworks */,
+				6C8D1C0118E2BD2200566448 /* UIKit.framework in Frameworks */,
+				6C8D1BFF18E2BD2200566448 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C8DBABB18B2002500AE3197 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C8DBAEE18B200C000AE3197 /* CoreGraphics.framework in Frameworks */,
+				6C8DBAEC18B200B900AE3197 /* QuartzCore.framework in Frameworks */,
+				6C8DBAEA18B200B200AE3197 /* OpenGLES.framework in Frameworks */,
+				6C8DBAE818B200AB00AE3197 /* UIKit.framework in Frameworks */,
+				6C8DBAC218B2002500AE3197 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CF31C2818B63ED700C3498C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CF31C2D18B63ED700C3498C /* CoreFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6C1024EF18E08FA6002BE10B /* Output */ = {
+			isa = PBXGroup;
+			children = (
+				6C1024ED18E08DFE002BE10B /* CompoGraphicsOutput.h */,
+				6C1024EE18E08F9E002BE10B /* CompoScreenOutput.h */,
+				6C521CC018E28CF900F3EBA3 /* CompoRenderBufferOutput.cpp */,
+				6C521CC118E28CF900F3EBA3 /* CompoRenderBufferOutput.h */,
+			);
+			name = Output;
+			sourceTree = "<group>";
+		};
+		6C55D57818BD137E0010003C /* ios */ = {
+			isa = PBXGroup;
+			children = (
+				6C55D57918BD137E0010003C /* CompoImageIOS.mm */,
+				6C55D57A18BD137E0010003C /* CompoUtilIOS.mm */,
+				6C55D57B18BD137E0010003C /* UIImage+Compo.h */,
+				6C55D57C18BD137E0010003C /* UIImage+Compo.mm */,
+				6C1024F018E090B0002BE10B /* CompoScreenOutputIOS.mm */,
+			);
+			name = ios;
+			path = ../../renderer/ios;
+			sourceTree = "<group>";
+		};
+		6C8D1C0218E2BD2200566448 /* CompoDemo */ = {
+			isa = PBXGroup;
+			children = (
+				6C684FD318E5AC2E00286528 /* AppDelegate.h */,
+				6C684FD418E5AC2E00286528 /* AppDelegate.m */,
+				6C684FD518E5AC2E00286528 /* main.mm */,
+				6C684FD618E5AC2E00286528 /* ViewController.h */,
+				6C684FD718E5AC2E00286528 /* ViewController.m */,
+				6C8D1C4D18E2BE7500566448 /* Images.xcassets */,
+				6C8D1C3A18E2BDFA00566448 /* Main.storyboard */,
+				6C8D1C3618E2BDF300566448 /* custom.JPG */,
+				6C8D1C3718E2BDF300566448 /* demo.jpg */,
+				6C8D1C0318E2BD2200566448 /* Supporting Files */,
+			);
+			name = CompoDemo;
+			path = LibTest;
+			sourceTree = "<group>";
+		};
+		6C8D1C0318E2BD2200566448 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6C8D1C2C18E2BD8F00566448 /* InfoPlist.strings */,
+				6C8D1C2918E2BD5200566448 /* TestApp-Prefix.pch */,
+				6C8D1C2A18E2BD5200566448 /* TestApp.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6C8DBAB518B2002500AE3197 = {
+			isa = PBXGroup;
+			children = (
+				6C8DBAF018B20E5400AE3197 /* CompoRenderer */,
+				6C8DBAC318B2002500AE3197 /* CompoView */,
+				6CF31C2E18B63ED700C3498C /* CompoResources */,
+				6C8D1C0218E2BD2200566448 /* CompoDemo */,
+				6C8DBAC018B2002500AE3197 /* Frameworks */,
+				6C8DBABF18B2002500AE3197 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6C8DBABF18B2002500AE3197 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6C8DBABE18B2002500AE3197 /* libCompoView.a */,
+				6CF31C2B18B63ED700C3498C /* Compo.bundle */,
+				6C8D1BFE18E2BD2200566448 /* CompoDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6C8DBAC018B2002500AE3197 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6C8DBAED18B200C000AE3197 /* CoreGraphics.framework */,
+				6C8DBAEB18B200B900AE3197 /* QuartzCore.framework */,
+				6C8DBAE918B200B200AE3197 /* OpenGLES.framework */,
+				6C8DBAE718B200AB00AE3197 /* UIKit.framework */,
+				6C8DBAC118B2002500AE3197 /* Foundation.framework */,
+				6CF31C2C18B63ED700C3498C /* CoreFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6C8DBAC318B2002500AE3197 /* CompoView */ = {
+			isa = PBXGroup;
+			children = (
+				6C8DBAC418B2002500AE3197 /* Supporting Files */,
+				6C03DFC918B268B7009F79B4 /* CompoView.h */,
+				6C03DFCA18B268B7009F79B4 /* CompoView.mm */,
+			);
+			path = CompoView;
+			sourceTree = "<group>";
+		};
+		6C8DBAC418B2002500AE3197 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6C8DBAC518B2002500AE3197 /* CompoView-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6C8DBAF018B20E5400AE3197 /* CompoRenderer */ = {
+			isa = PBXGroup;
+			children = (
+				6C55D57818BD137E0010003C /* ios */,
+				6CF31AFA18B428C400C3498C /* CompoShaderInfoLog.h */,
+				6C1024A518E07C81002BE10B /* CompoRenderState.h */,
+				6CF31AF918B428C400C3498C /* CompoShaderInfoLog.cpp */,
+				6C8DBAF818B221A300AE3197 /* CompoTypes.h */,
+				6C03E05418B28021009F79B4 /* CompoImage.h */,
+				6C55D58118BD13A70010003C /* CompoImage.inl */,
+				6CF31AE118B35A6300C3498C /* CompoCrypt.h */,
+				6CF31AF418B36DBB00C3498C /* CompoShader.h */,
+				6CF31AF318B36DBB00C3498C /* CompoShader.cpp */,
+				6CF31AFD18B428E300C3498C /* CompoShaderProgram.h */,
+				6CF31AFC18B428E300C3498C /* CompoShaderProgram.cpp */,
+				6CF31B0318B4436500C3498C /* CompoShadersSources.h */,
+				6CF31B0418B44D2900C3498C /* CompoPhotoQuad.cpp */,
+				6CF31B0518B44D2900C3498C /* CompoPhotoQuad.h */,
+				6CF31C0A18B47F1A00C3498C /* CompoTexture.h */,
+				6CF31C0918B47F1A00C3498C /* CompoTexture.cpp */,
+				6CF31C1018B5D2AA00C3498C /* CompoUtil.h */,
+				6CF31C1618B5D8CF00C3498C /* CompoEffect.cpp */,
+				6CF31C1718B5D8CF00C3498C /* CompoEffect.h */,
+				6CF31C2418B63E6200C3498C /* CompoComposition.cpp */,
+				6CF31C2518B63E6200C3498C /* CompoComposition.h */,
+				6C38CD0718E031AD00887BD4 /* CompoImageSources.h */,
+				6C1024EC18E08D5C002BE10B /* CompoRenderable.h */,
+				6C1024EF18E08FA6002BE10B /* Output */,
+			);
+			name = CompoRenderer;
+			sourceTree = "<group>";
+		};
+		6CF31C2E18B63ED700C3498C /* CompoResources */ = {
+			isa = PBXGroup;
+			children = (
+				6CF31C3818B6417900C3498C /* Resources */,
+				6CF31C2F18B63ED700C3498C /* Supporting Files */,
+			);
+			path = CompoResources;
+			sourceTree = "<group>";
+		};
+		6CF31C2F18B63ED700C3498C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6CF31C3818B6417900C3498C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6C96027618BDCD9A00332E59 /* analogMap.png */,
+				6C96027718BDCD9A00332E59 /* chalkBoard.png */,
+				6C96027818BDCD9A00332E59 /* coatCurves.png */,
+				6C96027918BDCD9A00332E59 /* desakuMap.png */,
+				6C96027A18BDCD9A00332E59 /* heroMap.png */,
+				6C96027B18BDCD9A00332E59 /* hikeCurves.png */,
+				6C96027C18BDCD9A00332E59 /* hitamPutihContrast.png */,
+				6C96027D18BDCD9A00332E59 /* hitamPutihCurves.png */,
+				6C96027E18BDCD9A00332E59 /* hudsonBackground.png */,
+				6C96027F18BDCD9A00332E59 /* hudsonMap.png */,
+				6C96028018BDCD9A00332E59 /* keludMap.png */,
+				6C96028118BDCD9A00332E59 /* keludStory.png */,
+				6C96028218BDCD9A00332E59 /* kelvinMap.png */,
+				6C96028318BDCD9A00332E59 /* loveMap.png */,
+				6C96028418BDCD9A00332E59 /* pencilMap.png */,
+				6C96028518BDCD9A00332E59 /* scribeMap.png */,
+				6C96028618BDCD9A00332E59 /* softLight.png */,
+				6C96028718BDCD9A00332E59 /* storyMap.png */,
+				6C96028818BDCD9A00332E59 /* stylishCurves.png */,
+				6C96028918BDCD9A00332E59 /* stylishEdgeBurn.png */,
+				6C96028A18BDCD9A00332E59 /* stylishMetal.png */,
+				6C96028B18BDCD9A00332E59 /* thermoBlowout.png */,
+				6C96028C18BDCD9A00332E59 /* thermoContrast.png */,
+				6C96028D18BDCD9A00332E59 /* thermoLuma.png */,
+				6C96028E18BDCD9A00332E59 /* thermoProcess.png */,
+				6C96028F18BDCD9A00332E59 /* thermoScreen.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		6CF31CB318B6CC9500C3498C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C521CC318E28CF900F3EBA3 /* CompoRenderBufferOutput.h in Headers */,
+				6CF31CB418B6CCC400C3498C /* CompoView.h in Headers */,
+				6C38CD0818E031AD00887BD4 /* CompoImageSources.h in Headers */,
+				6C55D57F18BD137E0010003C /* UIImage+Compo.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		6C8D1BFD18E2BD2200566448 /* CompoDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6C8D1C2318E2BD2300566448 /* Build configuration list for PBXNativeTarget "CompoDemo" */;
+			buildPhases = (
+				6C8D1BFA18E2BD2200566448 /* Sources */,
+				6C8D1BFB18E2BD2200566448 /* Frameworks */,
+				6C8D1BFC18E2BD2200566448 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6C8D1C7418E2C0B500566448 /* PBXTargetDependency */,
+				6C8D1C7218E2C07D00566448 /* PBXTargetDependency */,
+			);
+			name = CompoDemo;
+			productName = LibTest;
+			productReference = 6C8D1BFE18E2BD2200566448 /* CompoDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6C8DBABD18B2002500AE3197 /* CompoView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6C8DBAE118B2002500AE3197 /* Build configuration list for PBXNativeTarget "CompoView" */;
+			buildPhases = (
+				6C8DBABA18B2002500AE3197 /* Sources */,
+				6C8DBABB18B2002500AE3197 /* Frameworks */,
+				6C8DBABC18B2002500AE3197 /* CopyFiles */,
+				6CF31CB318B6CC9500C3498C /* Headers */,
+				6CF31CB518B6CD2800C3498C /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CompoView;
+			productName = CompoView;
+			productReference = 6C8DBABE18B2002500AE3197 /* libCompoView.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		6CF31C2A18B63ED700C3498C /* CompoResources */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6CF31C3518B63ED700C3498C /* Build configuration list for PBXNativeTarget "CompoResources" */;
+			buildPhases = (
+				6CF31C2718B63ED700C3498C /* Sources */,
+				6CF31C2818B63ED700C3498C /* Frameworks */,
+				6CF31C2918B63ED700C3498C /* Resources */,
+				6C612EC118DDE0C0005AF9E8 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CompoResources;
+			productName = CompoResources;
+			productReference = 6CF31C2B18B63ED700C3498C /* Compo.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6C8DBAB618B2002500AE3197 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Nomad Studio";
+			};
+			buildConfigurationList = 6C8DBAB918B2002500AE3197 /* Build configuration list for PBXProject "CompoView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 6C8DBAB518B2002500AE3197;
+			productRefGroup = 6C8DBABF18B2002500AE3197 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6C8DBABD18B2002500AE3197 /* CompoView */,
+				6CF31C2A18B63ED700C3498C /* CompoResources */,
+				6CF31CB718B6CDE300C3498C /* Framework */,
+				6C8D1BFD18E2BD2200566448 /* CompoDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6C8D1BFC18E2BD2200566448 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C8D1C7518E2C0C200566448 /* Compo.bundle in Resources */,
+				6C8D1C3918E2BDF300566448 /* demo.jpg in Resources */,
+				6C8D1C3B18E2BDFA00566448 /* Main.storyboard in Resources */,
+				6C8D1C4E18E2BE7500566448 /* Images.xcassets in Resources */,
+				6C8D1C3818E2BDF300566448 /* custom.JPG in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CF31C2918B63ED700C3498C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C96029518BDCD9A00332E59 /* hikeCurves.png in Resources */,
+				6C96029A18BDCD9A00332E59 /* keludMap.png in Resources */,
+				6C9602A618BDCD9A00332E59 /* thermoContrast.png in Resources */,
+				6C9602A118BDCD9A00332E59 /* storyMap.png in Resources */,
+				6C9602A918BDCD9A00332E59 /* thermoScreen.png in Resources */,
+				6C9602A018BDCD9A00332E59 /* softLight.png in Resources */,
+				6C96029D18BDCD9A00332E59 /* loveMap.png in Resources */,
+				6C96029218BDCD9A00332E59 /* coatCurves.png in Resources */,
+				6C9602A718BDCD9A00332E59 /* thermoLuma.png in Resources */,
+				6C96029B18BDCD9A00332E59 /* keludStory.png in Resources */,
+				6C9602A518BDCD9A00332E59 /* thermoBlowout.png in Resources */,
+				6C96029818BDCD9A00332E59 /* hudsonBackground.png in Resources */,
+				6C96029F18BDCD9A00332E59 /* scribeMap.png in Resources */,
+				6C9602A418BDCD9A00332E59 /* stylishMetal.png in Resources */,
+				6C9602A218BDCD9A00332E59 /* stylishCurves.png in Resources */,
+				6C96029118BDCD9A00332E59 /* chalkBoard.png in Resources */,
+				6C96029C18BDCD9A00332E59 /* kelvinMap.png in Resources */,
+				6C96029618BDCD9A00332E59 /* hitamPutihContrast.png in Resources */,
+				6C96029718BDCD9A00332E59 /* hitamPutihCurves.png in Resources */,
+				6C96029418BDCD9A00332E59 /* heroMap.png in Resources */,
+				6C96029918BDCD9A00332E59 /* hudsonMap.png in Resources */,
+				6C96029018BDCD9A00332E59 /* analogMap.png in Resources */,
+				6C96029E18BDCD9A00332E59 /* pencilMap.png in Resources */,
+				6C9602A318BDCD9A00332E59 /* stylishEdgeBurn.png in Resources */,
+				6C9602A818BDCD9A00332E59 /* thermoProcess.png in Resources */,
+				6C96029318BDCD9A00332E59 /* desakuMap.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6C612EC118DDE0C0005AF9E8 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set +e\ncp -a ${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME} ../../../product/ios/";
+		};
+		6CF31CB518B6CD2800C3498C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\n\nmkdir -p \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/Versions/A/Headers\"\n\n# Link the \"Current\" version to \"A\"\n/bin/ln -sfh A \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/Versions/Current\"\n/bin/ln -sfh Versions/Current/Headers \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/Headers\"\n/bin/ln -sfh \"Versions/Current/${PRODUCT_NAME}\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/${PRODUCT_NAME}\"\n\n# The -a ensures that the headers maintain the source modification date so that we don't constantly\n# cause propagating rebuilds of files that import these headers.\n/bin/cp -a \"${TARGET_BUILD_DIR}/${PUBLIC_HEADERS_FOLDER_PATH}/\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/Versions/A/Headers\"\n";
+		};
+		6CF31CBD18B6CDF600C3498C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\nset +u\n\n# Avoid recursively calling this script.\nif [[ $SF_MASTER_SCRIPT_RUNNING ]]\nthen\nexit 0\nfi\nset -u\nexport SF_MASTER_SCRIPT_RUNNING=1\n\nSF_TARGET_NAME=${PROJECT_NAME}\nSF_EXECUTABLE_PATH=\"lib${SF_TARGET_NAME}.a\"\nSF_WRAPPER_NAME=\"${SF_TARGET_NAME}.framework\"\n\n# The following conditionals come from\n# https://github.com/kstenerud/iOS-Universal-Framework\n\nif [[ \"$SDK_NAME\" =~ ([A-Za-z]+) ]]\nthen\nSF_SDK_PLATFORM=${BASH_REMATCH[1]}\nelse\necho \"Could not find platform name from SDK_NAME: $SDK_NAME\"\nexit 1\nfi\n\nif [[ \"$SDK_NAME\" =~ ([0-9]+.*$) ]]\nthen\nSF_SDK_VERSION=${BASH_REMATCH[1]}\nelse\necho \"Could not find sdk version from SDK_NAME: $SDK_NAME\"\nexit 1\nfi\n\nif [[ \"$SF_SDK_PLATFORM\" = \"iphoneos\" ]]\nthen\nSF_OTHER_PLATFORM=iphonesimulator\nelse\nSF_OTHER_PLATFORM=iphoneos\nfi\n\nif [[ \"$BUILT_PRODUCTS_DIR\" =~ (.*)$SF_SDK_PLATFORM$ ]]\nthen\nSF_OTHER_BUILT_PRODUCTS_DIR=\"${BASH_REMATCH[1]}${SF_OTHER_PLATFORM}\"\nelse\necho \"Could not find platform name from build products directory: $BUILT_PRODUCTS_DIR\"\nexit 1\nfi\n\n# Build for iOS 5 - 32 bit\nxcrun xcodebuild -project \"${PROJECT_FILE_PATH}\" -configuration 'Release' -sdk 'iphoneos' clean build ARCHS='armv7 armv7s' IPHONEOS_DEPLOYMENT_TARGET='5.0' TARGET_BUILD_DIR=\"${TEMP_DIR}/build-arm\" BUILT_PRODUCTS_DIR=\"${TEMP_DIR}/build-arm\"\n\n# Build for iOS 7 - 64 bit\nxcrun xcodebuild -project \"${PROJECT_FILE_PATH}\" -configuration 'Release' -sdk 'iphoneos' clean build ARCHS='arm64' IPHONEOS_DEPLOYMENT_TARGET='7.0' TARGET_BUILD_DIR=\"${TEMP_DIR}/build-arm64\" BUILT_PRODUCTS_DIR=\"${TEMP_DIR}/build-arm64\"\n\n# Build for iOS Simulator - 32 bit\nxcrun xcodebuild -project \"${PROJECT_FILE_PATH}\" -configuration 'Release' -sdk 'iphonesimulator' clean build ARCHS='i386' IPHONEOS_DEPLOYMENT_TARGET='5.0' TARGET_BUILD_DIR=\"${TEMP_DIR}/build-i386\" BUILT_PRODUCTS_DIR=\"${TEMP_DIR}/build-i386\"\n\n# Build for iOS Simulator - 64 bit\nxcrun xcodebuild -project \"${PROJECT_FILE_PATH}\" -configuration 'Release' -sdk 'iphonesimulator' clean build ARCHS='x86_64' VALID_ARCHS='x86_64' IPHONEOS_DEPLOYMENT_TARGET='7.0' TARGET_BUILD_DIR=\"${TEMP_DIR}/build-x86_64\" BUILT_PRODUCTS_DIR=\"${TEMP_DIR}/build-x86_64\"\n\n# SMASH 'EM ALL\nxcrun lipo -create \"${TEMP_DIR}/build-arm/${SF_EXECUTABLE_PATH}\" \"${TEMP_DIR}/build-arm64/${SF_EXECUTABLE_PATH}\" \"${TEMP_DIR}/build-i386/${SF_EXECUTABLE_PATH}\" \"${TEMP_DIR}/build-x86_64/${SF_EXECUTABLE_PATH}\" -output \"${BUILT_PRODUCTS_DIR}/${SF_WRAPPER_NAME}/Versions/A/${SF_TARGET_NAME}\"\n\nSF_PRODUCT_DIR=\"../../../product/ios\"\nSF_WRAPPER_PRODUCT_DIR=\"${SF_PRODUCT_DIR}/${SF_WRAPPER_NAME}\"\n\nif test ! -d \"${SF_PRODUCT_DIR}\"; then mkdir -p \"${SF_PRODUCT_DIR}\"; fi\n\nif test -d \"${SF_WRAPPER_PRODUCT_DIR}\";\nthen rm -rf \"${SF_WRAPPER_PRODUCT_DIR}\";\nfi\n\ncp -a \"${BUILT_PRODUCTS_DIR}/${SF_WRAPPER_NAME}\" \"${SF_PRODUCT_DIR}\"\n\n# Copy to current directory\n\n# Build the other platform.\n#xcrun xcodebuild -project \"${PROJECT_FILE_PATH}\" -target \"${TARGET_NAME}\" -configuration \"${CONFIGURATION}\" -sdk ${SF_OTHER_PLATFORM}${SF_SDK_VERSION} BUILD_DIR=\"${BUILD_DIR}\" OBJROOT=\"${OBJROOT}\" BUILD_ROOT=\"${BUILD_ROOT}\" SYMROOT=\"${SYMROOT}\" $ACTION\n\n# Smash the two static libraries into one fat binary and store it in the .framework\n#xcrun lipo -create \"${BUILT_PRODUCTS_DIR}/${SF_EXECUTABLE_PATH}\" \"${SF_OTHER_BUILT_PRODUCTS_DIR}/${SF_EXECUTABLE_PATH}\" -output \"${BUILT_PRODUCTS_DIR}/${SF_WRAPPER_NAME}/Versions/A/${SF_TARGET_NAME}\"\n\n# Copy the binary to the other architecture folder to have a complete framework in both.\n# cp -a \"${BUILT_PRODUCTS_DIR}/${SF_WRAPPER_NAME}/Versions/A/${SF_TARGET_NAME}\" \"${SF_OTHER_BUILT_PRODUCTS_DIR}/${SF_WRAPPER_NAME}/Versions/A/${SF_TARGET_NAME}\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6C8D1BFA18E2BD2200566448 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C684FDA18E5AC2E00286528 /* ViewController.m in Sources */,
+				6C684FD918E5AC2E00286528 /* main.mm in Sources */,
+				6C684FD818E5AC2E00286528 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C8DBABA18B2002500AE3197 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CF31C0B18B47F1A00C3498C /* CompoTexture.cpp in Sources */,
+				6CF31AFE18B428E300C3498C /* CompoShaderProgram.cpp in Sources */,
+				6CF31AF518B36DBB00C3498C /* CompoShader.cpp in Sources */,
+				6CF31C1818B5D8CF00C3498C /* CompoEffect.cpp in Sources */,
+				6C55D58018BD137E0010003C /* UIImage+Compo.mm in Sources */,
+				6C1024F218E090B0002BE10B /* CompoScreenOutputIOS.mm in Sources */,
+				6C521CC218E28CF900F3EBA3 /* CompoRenderBufferOutput.cpp in Sources */,
+				6CF31AFB18B428C400C3498C /* CompoShaderInfoLog.cpp in Sources */,
+				6C55D57D18BD137E0010003C /* CompoImageIOS.mm in Sources */,
+				6C55D57E18BD137E0010003C /* CompoUtilIOS.mm in Sources */,
+				6C03DFCB18B268B7009F79B4 /* CompoView.mm in Sources */,
+				6CF31B0618B44D2900C3498C /* CompoPhotoQuad.cpp in Sources */,
+				6CF31C2618B63E6200C3498C /* CompoComposition.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CF31C2718B63ED700C3498C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6C8D1C7218E2C07D00566448 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6C8DBABD18B2002500AE3197 /* CompoView */;
+			targetProxy = 6C8D1C7118E2C07D00566448 /* PBXContainerItemProxy */;
+		};
+		6C8D1C7418E2C0B500566448 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6CF31C2A18B63ED700C3498C /* CompoResources */;
+			targetProxy = 6C8D1C7318E2C0B500566448 /* PBXContainerItemProxy */;
+		};
+		6CF31CBC18B6CDE900C3498C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6C8DBABD18B2002500AE3197 /* CompoView */;
+			targetProxy = 6CF31CBB18B6CDE900C3498C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		6C8D1C2418E2BD2300566448 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TestApp-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = TestApp.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		6C8D1C2518E2BD2300566448 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TestApp-Prefix.pch";
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = TestApp.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		6C8DBADF18B2002500AE3197 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREFIX_HEADER = "TestApp-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = TestApp.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		6C8DBAE018B2002500AE3197 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREFIX_HEADER = "TestApp-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = TestApp.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6C8DBAE218B2002500AE3197 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = NO;
+				DSTROOT = /tmp/CompoView.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CompoView/CompoView-Prefix.pch";
+				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = Headers;
+				SKIP_INSTALL = YES;
+				STRIP_STYLE = "non-global";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/../../../3rdparty/glm-0.9.5";
+			};
+			name = Debug;
+		};
+		6C8DBAE318B2002500AE3197 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = NO;
+				DSTROOT = /tmp/CompoView.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CompoView/CompoView-Prefix.pch";
+				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = Headers;
+				SKIP_INSTALL = YES;
+				STRIP_STYLE = "non-global";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/../../../3rdparty/glm-0.9.5";
+			};
+			name = Release;
+		};
+		6CF31C3618B63ED700C3498C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMPRESS_PNG_FILES = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CompoResources/CompoResources-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = Compo;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		6CF31C3718B63ED700C3498C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMPRESS_PNG_FILES = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CompoResources/CompoResources-Prefix.pch";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = Compo;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		6CF31CB918B6CDE300C3498C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		6CF31CBA18B6CDE300C3498C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6C8D1C2318E2BD2300566448 /* Build configuration list for PBXNativeTarget "CompoDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C8D1C2418E2BD2300566448 /* Debug */,
+				6C8D1C2518E2BD2300566448 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6C8DBAB918B2002500AE3197 /* Build configuration list for PBXProject "CompoView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C8DBADF18B2002500AE3197 /* Debug */,
+				6C8DBAE018B2002500AE3197 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6C8DBAE118B2002500AE3197 /* Build configuration list for PBXNativeTarget "CompoView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C8DBAE218B2002500AE3197 /* Debug */,
+				6C8DBAE318B2002500AE3197 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6CF31C3518B63ED700C3498C /* Build configuration list for PBXNativeTarget "CompoResources" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6CF31C3618B63ED700C3498C /* Debug */,
+				6CF31C3718B63ED700C3498C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6CF31CB818B6CDE300C3498C /* Build configuration list for PBXAggregateTarget "Framework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6CF31CB918B6CDE300C3498C /* Debug */,
+				6CF31CBA18B6CDE300C3498C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6C8DBAB618B2002500AE3197 /* Project object */;
+}

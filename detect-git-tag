@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+
+# Using tag if available or just use hash if no tag is available
+VERSION_SUFFIX=`git log master -n 1 --pretty=format:%H`
+HEAD_TAG=`git name-rev --name-only --tags head`
+
+if test "x${HEAD_TAG}" != "xundefined";
+then
+  VERSION_SUFFIX=${HEAD_TAG};
+fi
+
+echo "Packaging for version - ${VERSION_SUFFIX} ..."
+
+BASE_FILE_NAME="CompoSDK"
+
+DMG_FILE_NAME="${BASE_FILE_NAME}-${VERSION_SUFFIX}.dmg"
+BZ2_FILE_NAME_ANDROID="${BASE_FILE_NAME}-${VERSION_SUFFIX}-android.tar.bz2"
+ZIP_FILE_NAME_ANDROID="${BASE_FILE_NAME}-${VERSION_SUFFIX}-android.zip"
+BZ2_FILE_NAME_BLACKBERRY="${BASE_FILE_NAME}-${VERSION_SUFFIX}-blackberry.tar.bz2"
+ZIP_FILE_NAME_BLACKBERRY="${BASE_FILE_NAME}-${VERSION_SUFFIX}-blackberry.zip"
+
+
+

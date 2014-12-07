@@ -1,0 +1,26 @@
+#!/usr/bin/env bash
+
+# Create DMG for iOS SDK
+cp -fa docs/README.md product/ios/
+cp -fa docs/ReleaseNotes.md product/ios/
+
+if test -f product/${DMG_FILE_NAME};
+then
+  rm product/${DMG_FILE_NAME};
+fi
+
+./tool/create-image/create-dmg --icon-size 100 \
+  --volname "CompoSDK-${VERSION_SUFFIX}" \
+  --volicon product/CompoDrive.icns \
+  --window-pos 100 100 \
+  --window-size 540 448 \
+  --background product/CompoBG.png \
+  --icon CompoView.framework 90 280 \
+  --icon Compo.bundle 220 280 \
+  --icon ReleaseNotes.md 350 280 \
+  --icon README.md 450 280 \
+  product/${DMG_FILE_NAME} product/ios/
+
+./tool/eulagise.pl --target "product/${DMG_FILE_NAME}" --license docs/PRE-EULA.txt 
+
+
